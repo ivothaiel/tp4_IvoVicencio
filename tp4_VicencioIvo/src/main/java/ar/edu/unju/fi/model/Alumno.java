@@ -1,88 +1,89 @@
 package ar.edu.unju.fi.model;
 
-import java.sql.Date;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-
-@Component
 public class Alumno {
-	
-	private String dni;
+    private String dni;
     private String nombre;
-    @Autowired
     private String apellido;
     private String email;
     private String telefono;
-    private Date fechaNacimiento;
-    private String domicilio;
-    private String LU;
-	public Alumno() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Alumno(String dni, String nombre, String apellido, String email, String telefono, Date fechaNacimiento,
-			String domicilio, String lU) {
-		super();
-		this.dni = dni;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.email = email;
-		this.telefono = telefono;
-		this.fechaNacimiento = fechaNacimiento;
-		this.domicilio = domicilio;
-		LU = lU;
-	}
-	public String getDni() {
-		return dni;
-	}
-	public void setDni(String dni) {
-		this.dni = dni;
-	}
-	public String getNombre() {
-		return nombre;
-	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-	public String getApellido() {
-		return apellido;
-	}
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getTelefono() {
-		return telefono;
-	}
-	public void setTelefono(String telefono) {
-		this.telefono = telefono;
-	}
-	public Date getFechaNacimiento() {
-		return fechaNacimiento;
-	}
-	public void setFechaNacimiento(Date fechaNacimiento) {
-		this.fechaNacimiento = fechaNacimiento;
-	}
-	public String getDomicilio() {
-		return domicilio;
-	}
-	public void setDomicilio(String domicilio) {
-		this.domicilio = domicilio;
-	}
-	public String getLU() {
-		return LU;
-	}
-	public void setLU(String lU) {
-		LU = lU;
-	}
-    
-    
+    private String carrera;
+    private String direccion;
+    private String codigoPostal;
 
+    // Constructor
+    public Alumno(String dni, String nombre, String apellido, String email, String telefono, String carrera, String direccion, String codigoPostal) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.telefono = telefono;
+        this.carrera = carrera;
+        this.direccion = direccion;
+        this.codigoPostal = codigoPostal;
+    }
+
+    // Getters y Setters
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public void setCodigoPostal(String codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
 }
